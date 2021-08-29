@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+
+<head>
+<title> Changing HTML Content </title>
+<meta charset = "UTF-8"/>                        <!--Character Set-->
+<meta name = "viewport" content = "max-width = device-width initial-scale = 1.0"/>
+</head>
+
+<body>
+<header> <h1> Changing HTML Content </h1> </header>
+<p id = "para1"> Old Paragraph 1 </p>  
+<p id = "para2"> Old Paragraph 2 </p>
+<script type = "text/javascript">
+document.getElementById("para1").innerHTML = "New Paragraph 1" //Method 1
+
+const para2 = document.getElementById("para2");  //Method 2
+para2.innerHTML = "New Paragraph 2";
+
+/* Content in the para1 id change from Old Paragraph 1 to New Paragraph 1
+   Content in the para2 id change from Old Paragraph 2 to New Paragraph 2 */
+</script>
+</body>
+</html>
